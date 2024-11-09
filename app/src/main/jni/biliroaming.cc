@@ -1,5 +1,6 @@
+#include <algorithm>
 #include <android/log.h>
-#include <dex_helper.h>
+#include <errno.h>
 #include <fcntl.h>
 #include <jni.h>
 #include <list>
@@ -8,6 +9,10 @@
 #include <sys/stat.h>
 #include <unistd.h>
 #include <zlib.h>
+#include <string>
+#include <string_view>
+
+import dex_helper;
 
 #define LOG_TAG "BiliRoaming"
 #define LOGV(...) __android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, __VA_ARGS__)

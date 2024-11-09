@@ -68,6 +68,10 @@
             android:summary="@string/custom_theme_summary"
             android:title="@string/custom_theme_title" />
         <SwitchPreference
+            android:key="auto_dark_splash"
+            android:summary="@string/auto_dark_splash_summary"
+            android:title="@string/auto_dark_splash_title" />
+        <SwitchPreference
             android:key="custom_splash"
             android:summary="@string/custom_splash_summary"
             android:title="@string/custom_splash_title" />
@@ -484,6 +488,11 @@
             android:summary="@string/remove_up_vip_label_summary"
             android:title="@string/remove_up_vip_label_title" />
 
+        <SwitchPreference
+            android:dependency="hidden"
+            android:key="no_live_mask"
+            android:summary="@string/no_live_mask_summary"
+            android:title="@string/no_live_mask_title" />
         <MultiSelectListPreference
             android:dependency="hidden"
             android:entries="@array/live_popup_entries"
@@ -504,6 +513,11 @@
             android:dependency="hidden"
             android:key="block_video_comment"
             android:title="@string/block_video_comment_title" />
+
+        <Preference
+            android:key="copy_access_key"
+            android:title="@string/copy_access_key_title"
+            android:summary="@string/copy_access_key_summary" />
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/setting_category">
